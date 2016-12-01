@@ -2,3 +2,4 @@ node_modules/
 LotteryX.jsproj.user
 .vs/config/applicationhost.config
 bin/
+platforms/
