@@ -1,0 +1,10 @@
+{
+  "name": "com.fookwin.lotteryspirit",
+  "app_id": "",
+  "gulpDependantTasks" : [
+    "sass"
+  ],  
+   "gulpStartupTasks": [        
+    "watch"
+  ]
+}

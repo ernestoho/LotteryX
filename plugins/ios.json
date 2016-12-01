@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.baidu.SSPPlugin": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.fookwin.lotteryspiritx"
+        }
+    },
+    "dependent_plugins": {}
+}

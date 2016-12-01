@@ -1,0 +1,55 @@
+﻿/* Empty. Add your own CSS if you like */
+.bar-home-off {
+    background:url(../img/icon_news_grey.png);
+    background-size:32px 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.bar-home-on {
+    background:url(../img/icon_news_red.png);
+    background-size:32px 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.bar-analysis-off {
+    background:url(../img/icon_analysis_grey.png);
+    background-size:32px 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.bar-analysis-on {
+    background:url(../img/icon_analysis_red.png);
+    background-size:32px 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.bar-selection-off {
+    background:url(../img/icon_selection_grey.png);
+    background-size:32px 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.bar-selection-on {
+    background:url(../img/icon_selection_red.png);
+    background-size:32px 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.iframe-wrapper iframe {
+   width: 100%;
+   height: 100%;
+ }
+
+.scroll-content > .scroll {
+    height: 100%;
+}
+.scroll-content > .scroll > iframe {
+    min-width: 100%;
+    min-height: 100%;
+}
