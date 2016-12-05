@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.fookwin.lotteryspiritx" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" defaultLocale="en-US">
+<widget id="com.fookwin.lotteryspirit" version="2.0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" defaultLocale="en-US" android-versionCode="">
   <name>福盈双色球</name>
   <description>Fookwin Lottery 2.0</description>
   <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Fookwin</author>

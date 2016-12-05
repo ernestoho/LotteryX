@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
-.run(function ($ionicPlatform) {
+.run(function ($ionicPlatform, $document) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -22,7 +22,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             // org.apache.cordova.statusbar required
             StatusBar.styleDefault();
         }
+
+        function onInterstitialReceive(message) {
+            baiduAd.isInterstitialReady(function (isReady) {
+                if (isReady) {
+                    baiduAd.showSplash("10040c78", "3096137");
+                    //baiduAd.showInterstitial();
+                }
+            });
+        }
+
+        function onInterstitialFail(message) {
+        }
+
+        function onBannerFail(message) {
+        }
+        
+        $document[0].addEventListener(baiduAd.AdEvent.onInterstitialReceive, onInterstitialReceive, false);
+        $document[0].addEventListener(baiduAd.AdEvent.onInterstitialFailedReceive, onInterstitialFail, false);
+        $document[0].addEventListener(baiduAd.AdEvent.onBannerFailedReceive, onBannerFail, false);
+        baiduAd.cacheInterstitial("10040c78", "3096137");
+        //baiduAd.showBanner(baiduAd.AD_POSITION.TOP_CENTER, 0, "10040c78", "3096167", "banner_ad_1");
     });
+
 })
 
 .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
