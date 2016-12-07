@@ -1,10 +1,11 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function ($scope, $sce) {
-    $scope.remoteUrl = $sce.trustAsResourceUrl('http://dblotterywebapp.azurewebsites.net/');
+    var managementUrl = 'http://dblotterywebapp.azurewebsites.net/fookwin.management';
+    $scope.remoteUrl = $sce.trustAsResourceUrl(managementUrl);
 
     $scope.doRefresh = function () {
-        $scope.remoteUrl = $sce.trustAsResourceUrl('http://dblotterywebapp.azurewebsites.net/#' + Date.now());
+        $scope.remoteUrl = $sce.trustAsResourceUrl(managementUrl + Date.now());
     };
 })
 

@@ -18,31 +18,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             cordova.plugins.Keyboard.disableScroll(true);
 
         }
+
         if (window.StatusBar) {
             // org.apache.cordova.statusbar required
             StatusBar.styleDefault();
         }
 
-        function onInterstitialReceive(message) {
-            baiduAd.isInterstitialReady(function (isReady) {
-                if (isReady) {
-                    baiduAd.showSplash("10040c78", "3096137");
-                    //baiduAd.showInterstitial();
-                }
-            });
-        }
+        // display splash add
+        if (cordova.platformId === "ios" || cordova.platformId === "android") {
+            $document[0].addEventListener(baiduAd.AdEvent.onInterstitialReceive, function (message) {
+                baiduAd.isInterstitialReady(function (isReady) {
+                    if (isReady) {
+                        baiduAd.showSplash("10040c78", "3096137");
+                        //baiduAd.showInterstitial();
+                    }
+                });
+            }, false);
 
-        function onInterstitialFail(message) {
+            baiduAd.cacheInterstitial("10040c78", "3096137");
+            //baiduAd.showBanner(baiduAd.AD_POSITION.TOP_CENTER, 0, "10040c78", "3096167", "banner_ad_1");
         }
-
-        function onBannerFail(message) {
-        }
-        
-        $document[0].addEventListener(baiduAd.AdEvent.onInterstitialReceive, onInterstitialReceive, false);
-        $document[0].addEventListener(baiduAd.AdEvent.onInterstitialFailedReceive, onInterstitialFail, false);
-        $document[0].addEventListener(baiduAd.AdEvent.onBannerFailedReceive, onBannerFail, false);
-        baiduAd.cacheInterstitial("10040c78", "3096137");
-        //baiduAd.showBanner(baiduAd.AD_POSITION.TOP_CENTER, 0, "10040c78", "3096167", "banner_ad_1");
     });
 
 })
