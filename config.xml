@@ -2,14 +2,14 @@
 <widget id="com.fookwin.lotteryspirit" version="2.0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" defaultLocale="en-US" android-versionCode="">
   <name>福盈双色球</name>
   <description>Fookwin Lottery 2.0</description>
-  <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Fookwin</author>
+  <author email="fookwin@126.com" href="http://taco.visualstudio.com">Fookwin</author>
   <content src="index.html" />
   <access origin="*" />
   <preference name="webviewbounce" value="false" />
   <preference name="UIWebViewBounce" value="false" />
   <preference name="DisallowOverscroll" value="true" />
-  <preference name="SplashScreenDelay" value="2000" />
-  <preference name="FadeSplashScreenDuration" value="2000" />
+  <preference name="SplashScreenDelay" value="3000" />
+  <preference name="FadeSplashScreenDuration" value="1000" />
   <preference name="BackupWebStorage" value="none" />
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar" />
@@ -86,7 +86,7 @@
   <preference name="AndroidLaunchMode" value="singleTop" />
   <preference name="android-targetSdkVersion" value="23" />
   <preference name="Orientation" value="portrait" />
-  <preference name="Fullscreen" value="True" />
+  <preference name="Fullscreen" value="False" />
   <preference name="target-device" value="handset" />
   <access origin="http://dblotterywebapp.azurewebsites.net" />
 </widget>
